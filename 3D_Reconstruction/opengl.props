@@ -1,8 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?> 
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
-  <ItemDefinitionGroup />
+  <PropertyGroup>
+    <IncludePath>E:\WorkShop\openGL\glew-2.1.0\include;E:\WorkShop\openGL\glfw-3.3.bin.WIN32\include;E:\WorkShop\openGL\Simple OpenGL Image Library\src;E:\WorkShop\openGL\glm;E:\WorkShop\openGL\assimp-3.3.1\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>E:\WorkShop\openGL\glfw-3.3.bin.WIN32\lib-vc2019\glfw3.lib;E:\WorkShop\openGL\glew-2.1.0\lib\Release\Win32\glew32s.lib;E:\WorkShop\openGL\Simple OpenGL Image Library\projects\VC9\Debug\SOIL.lib;E:\WorkShop\openGL\assimp-3.3.1\build\code\Debug\assimp-vc140-mt.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
   <ItemGroup />
 </Project>
