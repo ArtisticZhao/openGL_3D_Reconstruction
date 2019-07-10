@@ -15,7 +15,9 @@ enum Camera_Movement {
 	FORWARD,
 	BACKWARD,
 	LEFT,
-	RIGHT
+	RIGHT,
+	UP,
+	DOWN
 };
 
 // Default camera values
@@ -28,6 +30,7 @@ class Camera
 {
 public:
 	// Camera Attributes
+	float height=0;
 	glm::vec3 Position;
 	glm::vec3 Front;
 	glm::vec3 Up;
